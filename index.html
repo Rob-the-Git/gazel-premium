@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gazel Premium — Грузоперевозки</title>
+  <meta
+    name="description"
+    content="Грузоперевозки по Москве и области: квартирные и офисные переезды, доставка стройматериалов, междугородние рейсы."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#hero" aria-label="На главную">
+        <img
+          src="https://www.gazelonline.ru/assets/template/img/logo-top.png"
+          alt="Gazel Premium"
+        />
+      </a>
+
+      <button
+        id="burgerBtn"
+        class="burger"
+        type="button"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-desktop" aria-label="Основная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#tariffs">Тарифы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a class="btn btn-primary btn-header" href="#contacts">Оставить заявку</a>
+    </div>
+
+    <nav id="mobileMenu" class="nav-mobile" aria-label="Мобильная навигация">
+      <a href="#services" class="mobile-link">Услуги</a>
+      <a href="#tariffs" class="mobile-link">Тарифы</a>
+      <a href="#contacts" class="mobile-link">Контакты</a>
+      <a href="#contacts" class="btn btn-primary mobile-cta">Оставить заявку</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <video
+        id="heroVideo"
+        class="hero-video"
+        muted
+        playsinline
+        preload="auto"
+        <video src="https://www.w3schools.com/html/mov_bbb.mp4" autoplay loop muted playsinline></video>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content container">
+        <p class="hero-kicker">Перевозим точно в срок</p>
+        <h1>Грузоперевозки по Москве и области с подачей от 30 минут</h1>
+        <p class="hero-subtitle">
+          Газели 10-18 м³, аккуратные грузчики, фиксированная стоимость до начала работ.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#tariffs">Смотреть тарифы</a>
+          <a class="btn btn-outline btn-lg" href="#contacts">Получить расчет</a>
+        </div>
+      </div>
+
+      <div class="scroll-hint">Прокрутите вниз</div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2>Услуги</h2>
+        <p class="section-subtitle">
+          Закрываем задачи от точечной доставки до комплексного переезда.
+        </p>
+
+        <div class="services-grid">
+          <article class="card">
+            <h3>Квартирный переезд</h3>
+            <p>Разборка/сборка мебели, упаковка, подъем, расстановка по комнатам.</p>
+          </article>
+          <article class="card">
+            <h3>Офисный переезд</h3>
+            <p>Перевозка мебели, архива и техники с минимальным простоем бизнеса.</p>
+          </article>
+          <article class="card">
+            <h3>Доставка стройматериалов</h3>
+            <p>Смеси, листовые материалы, инструменты, бережная перевозка без потерь.</p>
+          </article>
+          <article class="card">
+            <h3>Межгород</h3>
+            <p>Рейсы по ЦФО и соседним регионам, контроль маршрута и времени прибытия.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tariffs" class="section tariffs">
+      <div class="container">
+        <h2>Тарифы</h2>
+        <p class="section-subtitle">
+          Реалистичные базовые ставки. Точная смета — после короткого брифа.
+        </p>
+
+        <div class="tariff-grid">
+          <article class="tariff-card">
+            <h3>Мини</h3>
+            <p class="tariff-meta">Газель 10 м³ • 1 грузчик</p>
+            <p class="price">2 500 ₽ / 2 часа</p>
+            <ul>
+              <li>Далее: 1 100 ₽/час</li>
+              <li>Пробег по Москве: 45 ₽/км за МКАД</li>
+              <li>Подача в пределах МКАД включена</li>
+            </ul>
+            <button class="btn btn-outline" type="button">Выбрать</button>
+          </article>
+
+          <article class="tariff-card tariff-card--featured">
+            <span class="badge">Чаще выбирают</span>
+            <h3>Стандарт</h3>
+            <p class="tariff-meta">Газель 14 м³ • 2 грузчика</p>
+            <p class="price">4 900 ₽ / 3 часа</p>
+            <ul>
+              <li>Далее: 1 600 ₽/час</li>
+              <li>Подъем без лифта: от 150 ₽/этаж</li>
+              <li>Подходит для 1-2 комнатной квартиры</li>
+            </ul>
+            <button class="btn btn-primary" type="button">Выбрать</button>
+          </article>
+
+          <article class="tariff-card">
+            <h3>Переезд под ключ</h3>
+            <p class="tariff-meta">Газель 18 м³ • 4 грузчика</p>
+            <p class="price">9 800 ₽ / 5 часов</p>
+            <ul>
+              <li>Далее: 2 200 ₽/час</li>
+              <li>Упаковка и маркировка включены</li>
+              <li>Для больших квартир и офисов</li>
+            </ul>
+            <button class="btn btn-outline" type="button">Выбрать</button>
+          </article>
+        </div>
+
+        <p class="tariff-note">
+          Ночной коэффициент (23:00-07:00): +20%. Минимальный заказ — 2 часа.
+        </p>
+      </div>
+    </section>
+
+    <section id="contacts" class="section contacts">
+      <div class="container contacts-inner">
+        <div class="contacts-info">
+          <h2>Контакты</h2>
+          <p class="section-subtitle">Ответим за 10 минут и сразу назовем стоимость.</p>
+          <ul class="contact-list">
+            <li><strong>Телефон:</strong> +7 (495) 118-39-53</li>
+            <li><strong>WhatsApp:</strong> +7 (901) 777-44-22</li>
+            <li><strong>Email:</strong> info@gazel-premium.ru</li>
+            <li><strong>График:</strong> ежедневно, 08:00-22:00</li>
+          </ul>
+        </div>
+
+        <form class="contact-form">
+          <label>
+            Имя
+            <input type="text" name="name" placeholder="Как к вам обращаться" required />
+          </label>
+          <label>
+            Телефон
+            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required />
+          </label>
+          <label>
+            Что перевозим
+            <textarea
+              name="comment"
+              rows="4"
+              placeholder="Например: переезд 2-комнатной квартиры, 15 коробок и диван"
+            ></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Отправить заявку</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Gazel Premium. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
